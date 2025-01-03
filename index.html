@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&display=swap">
+
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      font-family: 'Figtree', sans-serif;
+      background-color: hsl(47, 88%, 63%);
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .blog-card-container {
+      background-color: hsl(0, 0%, 100%);
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #000;
+      box-shadow: 10px 10px 0px hsl(0, 0%, 0%);
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .image-article {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      background-color: hsl(47, 88%, 63%);
+      font-weight: 700;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      display: inline-block;
+      color: hsl(0, 0%, 7%);
+    }
+
+    .date {
+      font-size: 13px;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .title {
+      font-weight: 700;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .title:hover {
+      color: hsl(47, 88%, 63%);
+    }
+
+    .description {
+      font-size: 13px;
+      margin-bottom: 10px;
+      color: hsl(0, 0%, 42%);
+      font-weight: 500;
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .author-avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .author-name {
+      font-weight: 700;
+      font-size: 13px;
+      color: hsl(0, 0%, 7%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="blog-card-container">
+    <div class="card">
+      <img src="assets/images/illustration-article.svg" alt="image-article" class="image-article">
+      <div class="card-content">
+        <span class="tag">Learning</span>
+        <p class="date">Published 21 Dec 2023</p>
+        <h2 class="title">HTML & CSS foundations</h2>
+        <p class="description">These languages are the backbone of every website, defining structure, content, and
+          presentation.</p>
+        <div class="author">
+          <img src="assets/images/image-avatar.webp" alt="image-avatar" class="author-avatar">
+          <div class="author-name">
+            <h3>Greg Hooper</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/AnaMdTech">AnaMdTech</a>.
+  </div>
+</body>
+
+</html>
